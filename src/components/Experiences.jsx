@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
-import { PROJECTS } from "../constants"
+import { EXPERIENCES } from "../constants"
 
-const Projects = () => {
+const Experiences = () => {
   return (
     <div className="pb-4">
       <motion.h2
@@ -10,10 +10,10 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
-        Projects
+        Experiences
       </motion.h2>
       <div>
-        {PROJECTS.map((project, index) => (
+        {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -21,13 +21,9 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                alt={project.title}
-                src={project.image}
-                width={250}
-                height={250}
-                className="mb-6 rounded"
-              />
+              <p className="mb-2 text-sm text-stone-400">
+                {experience.year}
+              </p>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -35,10 +31,12 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
-              <p className="mb-4 text-stone-400">{project.description}</p>
+              <h3 className="mb-2 font-semibold">
+                {experience.role} - <span className="text-sm text-stone-500">{experience.company}</span>
+              </h3>
+              <p className="mb-4 text-stone-400">{experience.description}</p>
               <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, childIndex) => (
+                {experience.technologies.map((tech, childIndex) => (
                   <span key={childIndex} className="rounded bg-stone-900 p-2 text-sm font-medium text-stone-300">
                     {tech}
                   </span>
@@ -49,7 +47,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Experiences

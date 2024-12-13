@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { DiMsqlServer } from "react-icons/di";
-import { SiDbeaver, SiDocker, SiElixir, SiExpress, SiFlask, SiGin, SiGit, SiGo, SiGooglecloud, SiJavascript, SiLinux, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si";
-import { VscAzure } from "react-icons/vsc";
+import { motion } from "framer-motion"
+import { DiMsqlServer } from "react-icons/di"
+import { SiDbeaver, SiDocker, SiElixir, SiExpress, SiFlask, SiGin, SiGit, SiGo, SiGooglecloud, SiJavascript, SiLinux, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si"
+import { VscAzure } from "react-icons/vsc"
 
 const iconVariants = (duration) => ({
   initial: { y: -7.5 },
@@ -11,10 +11,10 @@ const iconVariants = (duration) => ({
       duration,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-});
+      repeatType: "reverse"
+    }
+  }
+})
 
 const Technologies = () => {
   return (
@@ -211,7 +211,7 @@ const Technologies = () => {
         </motion.div>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Technologies;
+export default Technologies

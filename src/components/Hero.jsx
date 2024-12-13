@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
-import profilePic from "../assets/raviKumarProfile.webp";
-import { HERO_CONTENT } from "../constants";
+import { motion } from "framer-motion"
+import resume from "../assets/resume.pdf"
+import profilePic from "../assets/ryuProfile.jpg"
+import { HERO_CONTENT } from "../constants"
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -10,14 +11,14 @@ const containerVariants = {
     transition: {
       duration: 0.5,
       staggerChildren: 0.5,
-    },
-  },
-};
+    }
+  }
+}
 
 const childVariants = {
   hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+}
 
 const Hero = () => {
   return (
@@ -63,7 +64,7 @@ const Hero = () => {
             </motion.p>
             <motion.a
               variants={childVariants}
-              href="/"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               download
@@ -75,7 +76,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

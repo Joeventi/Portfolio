@@ -1,9 +1,9 @@
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Technologies from "./components/Technologies";
+import Contact from "./components/Contact"
+import Experiences from "./components/Experiences"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
+import Technologies from "./components/Technologies"
 
 const App = () => {
   return (
@@ -17,11 +17,11 @@ const App = () => {
         <Hero />
         <Technologies />
         <Projects />
-        <Experience />
+        <Experiences />
         <Contact />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -1,6 +1,6 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import logo from "../assets/raviKumarLogo.webp";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6"
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
         </a>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

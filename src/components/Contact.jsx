@@ -8,6 +8,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 1, y: -100 }}
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         className="my-10 text-center text-4xl"
       >
         Get in Touch
@@ -17,6 +18,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
           className="my-4"
         >
           {CONTACT.address}
@@ -25,6 +27,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
           className="my-4"
         >
           {CONTACT.phoneNo}

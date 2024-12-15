@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { DiMsqlServer } from "react-icons/di"
-import { SiDbeaver, SiDocker, SiElixir, SiExpress, SiFlask, SiGin, SiGit, SiGo, SiGooglecloud, SiJavascript, SiLinux, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si"
+import { SiDbeaver, SiDocker, SiElixir, SiExpress, SiFlask, SiGin, SiGit, SiGo, SiGooglecloud, SiJavascript, SiLinux, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiTypescript, SiVite } from "react-icons/si"
 import { VscAzure } from "react-icons/vsc"
 
 const iconVariants = (duration) => ({
@@ -23,6 +23,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
         className="my-20 text-center text-4xl"
       >
         Technologies
@@ -31,13 +32,14 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4 text-6xl"
+        viewport={{ once: true }}
+        className="flex flex-wrap items-center justify-center gap-3 text-5xl"
       >
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          className="p-4"
+          className="p-3"
         >
           <SiJavascript />
         </motion.div>
@@ -45,7 +47,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiTypescript />
         </motion.div>
@@ -53,15 +55,23 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          className="p-4"
+          className="p-3"
         >
           <SiReact />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
+          variants={iconVariants(4)}
+          className="p-3"
+        >
+          <SiVite />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          animate="animate"
           variants={iconVariants(3)}
-          className="p-4"
+          className="p-3"
         >
           <SiNextdotjs />
         </motion.div>
@@ -69,7 +79,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiNodedotjs />
         </motion.div>
@@ -77,7 +87,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
-          className="p-4"
+          className="p-3"
         >
           <SiExpress />
         </motion.div>
@@ -85,7 +95,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          className="p-4"
+          className="p-3"
         >
           <SiNestjs />
         </motion.div>
@@ -93,7 +103,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiGo />
         </motion.div>
@@ -101,7 +111,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiGin />
         </motion.div>
@@ -109,7 +119,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          className="p-4"
+          className="p-3"
         >
           <SiPython />
         </motion.div>
@@ -117,7 +127,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
-          className="p-4"
+          className="p-3"
         >
           <SiFlask />
         </motion.div>
@@ -125,7 +135,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiElixir />
         </motion.div>
@@ -133,7 +143,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          className="p-4"
+          className="p-3"
         >
           <SiDbeaver />
         </motion.div>
@@ -141,7 +151,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
-          className="p-4"
+          className="p-3"
         >
           <DiMsqlServer />
         </motion.div>
@@ -149,7 +159,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiPostgresql />
         </motion.div>
@@ -157,7 +167,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          className="p-4"
+          className="p-3"
         >
           <SiMysql />
         </motion.div>
@@ -165,7 +175,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          className="p-4"
+          className="p-3"
         >
           <SiMongodb />
         </motion.div>
@@ -173,7 +183,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiLinux />
         </motion.div>
@@ -181,7 +191,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2.5)}
-          className="p-4"
+          className="p-3"
         >
           <SiDocker />
         </motion.div>
@@ -189,7 +199,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
-          className="p-4"
+          className="p-3"
         >
           <SiGit />
         </motion.div>
@@ -197,7 +207,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          className="p-4"
+          className="p-3"
         >
           <VscAzure />
         </motion.div>
@@ -205,7 +215,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          className="p-4"
+          className="p-3"
         >
           <SiGooglecloud />
         </motion.div>

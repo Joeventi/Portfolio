@@ -1,67 +1,83 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import projectCM from "../assets/projects/centralmedica.webp";
+import projectSOI from "../assets/projects/soindustri.webp";
+import projectHI from "../assets/projects/hematindonesia.webp";
+import projectDSW from "../assets/projects/dapoersariwangi.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2022}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Aug 2024 - Present",
+    role: "Junior Software Engineer",
+    company: "Anugrah Argon Medica",
+    description: `Developed and maintained a scalable micro front-end PWA, engineered RESTful APIs, optimized logging and database queries, and contributed to the Consumer Health Dexa (CHD) project by building solutions for marketing data collection, call plan scheduling, sellout tracking, and event location analysis for fieldforce teams.`,
+    technologies: ["React", "Redux", "Node.js", "Express", "DBeaver", "Ant Design"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Apr 2024 - Jul 2024",
+    role: "Data Governance Intern",
+    company: "Sinar Mas Land",
+    description: `Developed and deployed APIs using Flask, Docker, and Azure Container Apps for real-time data transfer from SAP (CX & S/4HANA) to an SQL Server MDM database. Automated sequential execution of Informatica jobs with APIs achieving 50-200ms response times. Built and managed frontend and backend operations for MDM web-app development while overseeing Git branch management and team updates to ensure seamless integration and collaboration.`,
+    technologies: ["Flask", "React", "Informatica", "Docker", "Azure", "SQL Server"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "Aug 2023 - Dec 2023",
+    role: "Data Management & Reporting Intern",
+    company: "Sinar Mas Land",
+    description: `Contributed to creating end-year vendor performance evaluation reports using Microsoft Excel, developed real-time interactive dashboards for daily vendor performance with Power BI, and assisted with monthly construction progress data entry.`,
+    technologies: ["Power BI", "Microsoft Excel", "Adobe Photoshop"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "Aug 2023 - Jan 2024",
+    role: "Cloud Computing Cohort",
+    company: "Bangkit Academy",
+    description: `Gained knowledge of Google Cloud Platform and cloud service cost structures, and served as a backend engineer on a Capstone Project, leveraging Node.js, Cloud SQL, Docker, and Cloud Run for scalable API development and deployment.`,
+    technologies: ["Docker", "GCP", "Node.js", "Express", "MySQL"],
+  },
+  {
+    year: "Feb 2023 - Jul 2023",
+    role: "Data Analyst Intern",
+    company: "Astra Credit Companies",
+    description: `Developed interactive dashboards for Daihatsu's accounts receivable and weekly B2B performance using Looker Studio and Tableau connected to SQL Server views, streamlined daily data preparation with SQL procedures and triggers to eliminate 2-3 manual workflows, and analyzed direct and indirect selling data using Microsoft Excel.`,
+    technologies: ["SQL Server", "Looker Studio", "Tableau", "Microsoft Excel"],
+  },
+  {
+    year: "Nov 2022 - Dec 2022",
+    role: "Frontend Web Developer Intern",
+    company: "Seeds",
+    description: `Fixed bugs on the user login and OTP authorization page, translated UI designs from Figma into structured React JSX and Tailwind CSS code, and maintained web functionality by synchronizing local branches with the production Git branch.`,
+    technologies: ["Next.js", "React", "Tailwind CSS"],
   },
 ];
 
 export const PROJECTS = [
   {
+    title: "Office Administrative Management",
+    company: "Central Medica",
+    image: projectCM,
+    description: "Developing and managing back-office administrative processes for Central Medica, focusing on streamlining internal operations. Key responsibilities included overseeing inventory management, handling order processing, and maintaining accurate records to support overall business efficiency.",
+    technologies: ["React", "Elysia", "Bun", "PostgreSQL", "VPS", "Ant Design"],
+  },
+  {
+    title: "Package Evidence Tracker",
+    company: "Hemat Indonesia",
+    image: projectHI,
+    description: "Developing an admin page with a module focused on tracking evidence for shipment processes, featuring barcode scanner integration, webcam-triggered evidence capture, and duplicate airwaybill validation. The system optimizes operational efficiency by limiting evidence submissions per airwaybill to prevent duplicate shipments and reduce company losses.",
+    technologies: ["React", "Gin", "GCP", "Docker", "MongoDB", "Chakra UI"],
+  },
+  {
+    title: "Marketing Channel",
+    company: "Dapoer Sariwangi",
+    image: projectDSW,
+    description: "Developing a reservation web application to improve customer experience and operational efficiency, with features including restaurant profiles, web-based menu information, and room reservation functionality.",
+    technologies: ["Next.js", "NestJS", "Prisma ORM", "PostgreSQL", "Cloudinary"],
+  },
+  {
     title: "E-Commerce Website",
-    image: project1,
-    description: "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "HTML", "CSS", "React", "HTML", "CSS", "React"],
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description: "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description: "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description: "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    company: "PT Sinar Ogan Industri",
+    image: projectSOI,
+    description: "Developed an end-to-end e-commerce platform using the MERN stack for the web application and Flask for an item-based collaborative filtering machine learning model. Key features included a stock tracker for inventory management, targeted item-based recommendations, and role-based user pages.",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Flask"],
   },
 ];
 

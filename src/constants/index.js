@@ -56,7 +56,7 @@ export const PROJECTS = [
     company: "Central Medica",
     image: projectCM,
     description: "Developing and managing back-office administrative processes for Central Medica, focusing on streamlining internal operations. Key responsibilities included overseeing inventory management, handling order processing, and maintaining accurate records to support overall business efficiency.",
-    technologies: ["React", "Elysia", "Bun", "PostgreSQL", "VPS", "Ant Design"],
+    technologies: ["React", "Elysia", "Bun", "Prisma ORM", "PostgreSQL", "VPS", "Ant Design"],
   },
   {
     title: "Package Evidence Tracker",

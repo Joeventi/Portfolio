@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.jpg"
 
 const Navbar = () => {
   return (

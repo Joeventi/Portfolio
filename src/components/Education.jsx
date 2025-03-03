@@ -11,10 +11,10 @@ const Education = () => {
         viewport={{ once: true }}
         className="my-20 text-center text-4xl"
       >
-        Projects
+        Education
       </motion.h2>
       <div>
-        {Education.map((project, index) => (
+        {EDUCATION.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

@@ -1,8 +1,9 @@
-import projectCM from "../assets/projects/centralmedica.webp";
-import projectDSW from "../assets/projects/dapoersariwangi.webp";
-import projectHI from "../assets/projects/hematindonesia.webp";
-import projectSOI from "../assets/projects/soindustri.webp";
-import hkust from "../assets/hkust.jpg"
+import shoot from "../assets/projects/shoot.png";
+import potato from "../assets/projects/potato.png";
+import connect4 from "../assets/projects/connect4.png";
+import wargames from "../assets/projects/wargames.jpeg";
+import easyeats from "../assets/projects/easyeats.png";
+import hkust from "../assets/hkust.png"
 
 export const HERO_CONTENT = `I am a Bachelor's in Computer Science from HKUST with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2024}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -30,7 +31,7 @@ export const EXPERIENCES = [
   },
 ];
 
-export const Education = [
+export const EDUCATION = [
   {
     title: "Bachelor's in Computer Science (BSc)",
     company: "Hong Kong University of Science and Technology (HKUST)",
@@ -42,33 +43,40 @@ export const Education = [
 
 export const PROJECTS = [
   {
-    title: "Office Administrative Management",
-    company: "Central Medica",
-    image: projectCM,
-    description: "Developing and managing back-office administrative processes for Central Medica, focusing on streamlining internal operations. Key responsibilities included overseeing inventory management, handling order processing, and maintaining accurate records to support overall business efficiency.",
-    technologies: ["React", "Elysia", "Bun", "Prisma ORM", "PostgreSQL", "VPS", "Ant Design"],
+    title: "QR Code Ordering System",
+    company: "Easy Eats",
+    image: easyeats,
+    description: "Developing a web-app platform for a QR code menu ordering system, featuring inventory tracking, receipt processing, and customisable menu designs. To be released in Indonesia.",
+    technologies: ["React", "GoLang", "Axios", "Typescript", "PostgreSQL", "Supabase", "Ant Design", "Next.js"],
   },
   {
-    title: "Package Evidence Tracker",
-    company: "Hemat Indonesia",
-    image: projectHI,
-    description: "Developing an admin page with a module focused on tracking evidence for shipment processes, featuring barcode scanner integration, webcam-triggered evidence capture, and duplicate airwaybill validation. The system optimizes operational efficiency by limiting evidence submissions per airwaybill to prevent duplicate shipments and reduce company losses.",
-    technologies: ["React", "Gin", "GCP", "Docker", "MongoDB", "Chakra UI"],
+    title: "Connect 4 AI",
+    company: "Personal",
+    image: connect4,
+    description: "Developed and trained a Connect 4 AI using MLAgents. Training is done by simulating 30 games at once, pitting a Player 1 AI against a Player 2 AI.",
+    technologies: ["Unity", "Artificial Intelligence", "MLAgents"],
   },
   {
-    title: "Marketing Channel",
-    company: "Dapoer Sariwangi",
-    image: projectDSW,
-    description: "Developing a reservation web application to improve customer experience and operational efficiency, with features including restaurant profiles, web-based menu information, and room reservation functionality.",
-    technologies: ["Next.js", "NestJS", "Prisma ORM", "PostgreSQL", "Cloudinary"],
+    title: "2D Multiplayer Shooting Game",
+    company: "Shoot²",
+    image: shoot,
+    description: "Developed a multiplayer shooting game using Photon Fusion. The game supports a Lobby Create/Join system based on the lobby name. Players can customise their square colours and change their hats.",
+    technologies: ["Unity", "Multiplayer", "Photon Fusion"],
   },
   {
-    title: "E-Commerce Website",
-    company: "PT Sinar Ogan Industri",
-    image: projectSOI,
-    description: "Developed an end-to-end e-commerce platform using the MERN stack for the web application and Flask for an item-based collaborative filtering machine learning model. Key features included a stock tracker for inventory management, targeted item-based recommendations, and role-based user pages.",
-    technologies: ["MongoDB", "Express", "React", "Node.js", "Flask"],
+    title: "Economy Clicker Game",
+    company: "Potato Clicker",
+    image: potato,
+    description: "Developed a Clicker game that revolved around Supply and Demand. Supports saving progress and makes use of multiple Unity elements.",
+    technologies: ["Unity", "C#"],
   },
+  {
+    title: "Cybersecurity Training Course (Bandit)",
+    company: "Overthewire",
+    image: wargames,
+    description: "Completing the Bandit level in the popular Overthewire Wargames which trains learners how to use linux and navigate cybersecurity.",
+    technologies: ["Linux", "Cybersecurity"],
+  }
 ];
 
 export const CONTACT = {

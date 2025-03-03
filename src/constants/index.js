@@ -3,15 +3,15 @@ import projectDSW from "../assets/projects/dapoersariwangi.webp";
 import projectHI from "../assets/projects/hematindonesia.webp";
 import projectSOI from "../assets/projects/soindustri.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2022}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2024}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const EXPERIENCES = [
   {
-    year: "Aug 2024 - Present",
-    role: "Junior Software Engineer",
+    year: "Jul 2024 - Dec 2024",
+    role: "Full Stack Developer",
     company: "Dexa Group",
-    description: `Developed and maintained a scalable micro front-end PWA, engineered RESTful APIs, optimized logging and database queries, and contributed to the Consumer Health Dexa (CHD) project by building solutions for marketing data collection, call plan scheduling, sellout tracking, and event location analysis for fieldforce teams.`,
-    technologies: ["React", "Redux", "Node.js", "Express", "DBeaver", "Ant Design"],
+    description: `Tasked with creating the user interface for a new customer intelligence platform, Campflyer. Developed using REACT and Node.js. Utilised react libraries such as Antd, AG Grid, reCharts, etc. Backend work to make API calls and connections for data flow. Worked with MongoDB and PostgresSQL.`,
+    technologies: ["React", "Redux", "Node.js", "Express", "NextAuth", "Ant Design", "MongoDB", "PostgreSQL"],
   },
   {
     year: "Apr 2024 - Jul 2024",

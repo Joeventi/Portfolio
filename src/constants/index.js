@@ -2,6 +2,7 @@ import projectCM from "../assets/projects/centralmedica.webp";
 import projectDSW from "../assets/projects/dapoersariwangi.webp";
 import projectHI from "../assets/projects/hematindonesia.webp";
 import projectSOI from "../assets/projects/soindustri.webp";
+import hkust from "../assets/hkust.jpg"
 
 export const HERO_CONTENT = `I am a Bachelor's in Computer Science from HKUST with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2024}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -28,6 +29,16 @@ export const EXPERIENCES = [
     technologies: ["Unity", "C#", "Photon Fusion"],
   },
 ];
+
+export const Education = [
+  {
+    title: "Bachelor's in Computer Science (BSc)",
+    company: "Hong Kong University of Science and Technology (HKUST)",
+    image: hkust,
+    description: "Major In Computer Science. 6 month Exchange Program in the University of Toronto",
+    technologies: ["C++", "Java", "Object-oriented Programming", "Artificial Intelligence", "Design and Analysis of Algorithms", "Cybersecurity"],
+  },
+]
 
 export const PROJECTS = [
   {

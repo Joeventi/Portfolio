@@ -3,50 +3,29 @@ import projectDSW from "../assets/projects/dapoersariwangi.webp";
 import projectHI from "../assets/projects/hematindonesia.webp";
 import projectSOI from "../assets/projects/soindustri.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2024}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a Bachelor's in Computer Science from HKUST with a knack for crafting robust and scalable web applications and data solutions. With ${new Date().getFullYear() - 2024}+ years of hands-on experience, I have honed my skills in front-end technologies, as well as back-end technologies, cloud technologies, and data-driven technologies. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const EXPERIENCES = [
   {
     year: "Jul 2024 - Dec 2024",
     role: "Full Stack Developer",
-    company: "Dexa Group",
-    description: `Tasked with creating the user interface for a new customer intelligence platform, Campflyer. Developed using REACT and Node.js. Utilised react libraries such as Antd, AG Grid, reCharts, etc. Backend work to make API calls and connections for data flow. Worked with MongoDB and PostgresSQL.`,
+    company: "DG Innotech",
+    description: `Created the user interface for a new customer intelligence platform, Campflyer. Developed using REACT and Node.js. Utilised react libraries such as Antd, AG Grid, reCharts, etc. Backend work to make API calls and connections for data flow. Worked with MongoDB and PostgresSQL.`,
     technologies: ["React", "Redux", "Node.js", "Express", "NextAuth", "Ant Design", "MongoDB", "PostgreSQL"],
   },
   {
-    year: "Apr 2024 - Jul 2024",
-    role: "Data Governance Intern",
-    company: "Sinar Mas Land",
-    description: `Developed and deployed APIs using Flask, Docker, and Azure Container Apps for real-time data transfer from SAP (CX & S/4HANA) to an SQL Server MDM database. Automated sequential execution of Informatica jobs with APIs achieving 50-200ms response times. Built and managed frontend and backend operations for MDM web-app development while overseeing Git branch management and team updates to ensure seamless integration and collaboration.`,
+    year: "Jun 2023 - Aug 2023",
+    role: "Game Developer",
+    company: "Medmind Technology Limited",
+    description: `Created interactive minigames for Neurogym2. Created a motion game that can be controlled using a KJ Stick. Implemented AI opponents that users can play with using MLAgents.`,
     technologies: ["Flask", "React", "Informatica", "Docker", "Azure", "SQL Server"],
   },
   {
-    year: "Aug 2023 - Dec 2023",
-    role: "Data Management & Reporting Intern",
-    company: "Sinar Mas Land",
-    description: `Contributed to creating end-year vendor performance evaluation reports using Microsoft Excel, developed real-time interactive dashboards for daily vendor performance with Power BI, and assisted with monthly construction progress data entry.`,
-    technologies: ["Power BI", "Microsoft Excel", "Adobe Photoshop"],
-  },
-  {
-    year: "Aug 2023 - Jan 2024",
-    role: "Cloud Computing Cohort",
-    company: "Bangkit Academy",
-    description: `Gained knowledge of Google Cloud Platform and cloud service cost structures, and served as a backend engineer on a Capstone Project, leveraging Node.js, Cloud SQL, Docker, and Cloud Run for scalable API development and deployment.`,
-    technologies: ["Docker", "GCP", "Node.js", "Express", "MySQL"],
-  },
-  {
-    year: "Feb 2023 - Jul 2023",
-    role: "Data Analyst Intern",
-    company: "Astra Credit Companies",
-    description: `Developed interactive dashboards for Daihatsu's accounts receivable and weekly B2B performance using Looker Studio and Tableau connected to SQL Server views, streamlined daily data preparation with SQL procedures and triggers to eliminate 2-3 manual workflows, and analyzed direct and indirect selling data using Microsoft Excel.`,
-    technologies: ["SQL Server", "Looker Studio", "Tableau", "Microsoft Excel"],
-  },
-  {
-    year: "Nov 2022 - Dec 2022",
-    role: "Frontend Web Developer Intern",
-    company: "Seeds",
-    description: `Fixed bugs on the user login and OTP authorization page, translated UI designs from Figma into structured React JSX and Tailwind CSS code, and maintained web functionality by synchronizing local branches with the production Git branch.`,
-    technologies: ["Next.js", "React", "Tailwind CSS"],
+    year: "Jun 2022 - Aug 2022",
+    role: "Game Developer",
+    company: "Medmind Technology Limited",
+    description: `Created minigames for the company's new app, Neurogym2. Used Photon Fusion to add Multiplayer to the minigames`,
+    technologies: ["Unity", "C#", "Photon Fusion"],
   },
 ];
 
@@ -82,7 +61,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "BSD City, Tangerang, Banten 15339",
-  phoneNo: "+62 895 2307 7397",
-  email: "ryu.alvano@outlook.com",
+  // address: "BSD City, Tangerang, Banten 15339",
+  phoneNo: "+852 6212 0342",
+  email: "joeventlawrance@gmail.com",
 };

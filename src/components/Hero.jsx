@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import resume from "../assets/resume.pdf"
-import profilePic from "../assets/ryuProfile.jpg"
+import profilePic from "../assets/joeventProfile.jpeg"
 import { HERO_CONTENT } from "../constants"
 
 const containerVariants = {
@@ -48,7 +48,7 @@ const Hero = () => {
             <motion.h2
               variants={childVariants}
               className="pb-2 text-4xl tracking-tighter lg:text-8xl">
-              Ryu Alvano
+              Joevent Lawrance
             </motion.h2>
             <motion.span
               variants={childVariants}
